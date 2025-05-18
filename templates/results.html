@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Analysis Results</title>
+</head>
+<body>
+    <h1>Resume Text Extracted</h1>
+    <p>{{ text }}</p>
+
+    <h2>Skills Found</h2>
+    <ul>
+        {% for skill in skills %}
+            <li>{{ skill }}</li>
+        {% endfor %}
+    </ul>
+
+    <a href="/">Upload another</a>
+</body>
+</html>
