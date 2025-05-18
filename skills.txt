@@ -1,0 +1,13 @@
+python
+flask
+django
+machine learning
+sql
+html
+css
+javascript
+c++
+java
+communication
+teamwork
+problem solving
