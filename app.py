@@ -21,7 +21,12 @@ def index():
         return render_template("results.html", text=text, skills=skills)
         
     return render_template('index.html')
-
+@app.route("/home")
+def home():
+    return redirect(url_for('/'))
+@app.route("/about")
+def about():
+    return render_template("about.html")
 
 
 if __name__ == '__main__':
