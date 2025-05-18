@@ -1,13 +1,19 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-    <title>RESUME ANALYSER</title>
-</head>
-<body>
+{% extends "base.html" %}
+{% block title %} UPLOAD RESUME!
+{% endblock %}
+
+{% block content %}
+    <center>
     <h2>UPLOAD YOUR RESUME!</h2>
     <form method="POST" enctype="multipart/form-data">
-        <input type="file" name="resume" required ><br><br>
+        <lablel for="skills">Enter skills</label><br>
+        <textarea id="skills" name="skills" rows="6" cols="50" placeholder="type the skills..."></textarea>
+        <br>
+        <h2>Upload Resume (.docx)</h2>
+        <input type="file" name="resume" required >
+        <br>
+        <br>
         <input type="submit" value="Analyse Resume">
     </form>
-</body>
-</html>
+    </center>
+{% endblock %}
